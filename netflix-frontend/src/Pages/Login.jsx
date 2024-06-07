@@ -44,7 +44,7 @@ export default function Login(){
     };
  
     return(
-        <Container className="relative flex justify-center items-center h-screen w-screen bg-cover bg-center">
+        <div className="relative flex justify-center items-center h-screen w-screen bg-cover bg-center">
             <BackgroundImage />
             <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50">
                 <Header signup />
@@ -74,7 +74,7 @@ export default function Login(){
                     {wrongPass && <p className='mt-4 text-white font-bold'>Invalid login details!</p>}
                 </div>
             </div>
-        </Container>
+        </div>
 
   );
 }

@@ -43,7 +43,7 @@ export default function Signup(){
     };
 
     return(
-        <Container className='relative flex justify-center items-center text-white top-0 left-0 h-screen w-screen'>
+        <div className='relative flex justify-center items-center text-white top-0 left-0 h-screen w-screen'>
         <BackgroundImage className="top-0 left-0"></BackgroundImage>
         <div className='absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50'>
             <Header login/>
@@ -85,6 +85,6 @@ export default function Signup(){
                 >Sign Up</button>}
             </div>
       </div>
-    </Container>
+    </div>
   );
 }
