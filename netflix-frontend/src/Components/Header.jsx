@@ -12,7 +12,7 @@ export default function Header(props){
             <button onClick={() => navigate(props.login ? "/login" : "/signup")}
                 className='text-white font-semibold bg-red-600 py-2 px-4 rounded-md hover:bg-red-700 transition duration-300'
             >
-                {props.login ? "Log In" : "Sign In"}
+                {props.login ? "Log In" : "Sign Up"}
             </button>
         </div>
     )
