@@ -44,10 +44,11 @@ export default function Signup(){
 
     return(
         <div className='relative flex justify-center items-center text-white top-0 left-0 h-screen w-screen'>
-        <BackgroundImage className="top-0 left-0"></BackgroundImage>
+        <BackgroundImage ></BackgroundImage>
+        
         <div className='absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50'>
-            <Header login/>
-            <div className='absolute flex flex-col justify-center items-center top-0 bottom-0 right-0 left-0'>
+        <Header login />
+            <div className='absolute flex flex-col justify-center items-center  right-0 left-0'>
                 <div className="text-center text-xl">
                     <h1 className='font-extrabold text-6xl mb-5'>Unlimited movies, TV shows and more.</h1>
                     <h4 className='font-semibold mb-3 text-2xl'>Watch anywhere. Cancel anytime.</h4>

@@ -1,4 +1,4 @@
-import { Container } from "@mui/material";
+
 
 export default function Navbar({isScrolled}){
     const links = [
@@ -28,7 +28,7 @@ export default function Navbar({isScrolled}){
                     <input
                         type="text"
                         placeholder="Search"
-                        className="mr-2 px-4 py-2 bg-gray-300 text-black placeholder-gray-400 opacity-70 focus:outline-none rounded-md"
+                        className="mr-2 px-4 py-2 bg-gray-700 text-white placeholder-white opacity-70 focus:outline-none rounded-md"
                     />
                 </div>
                 <div>

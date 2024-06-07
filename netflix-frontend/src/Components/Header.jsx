@@ -9,7 +9,7 @@ export default function Header(props){
             <div className="p-4">
             <img src={logo} alt="logo" className='h-12'/>
             </div>
-            <button onClick={() => navigate(props.login ? "/login" : "/signup")}
+            <button onClick={() => navigate((props.login) ? "/login" : "/signup")}
                 className='text-white font-semibold bg-red-600 py-2 px-4 rounded-md hover:bg-red-700 transition duration-300'
             >
                 {props.login ? "Log In" : "Sign Up"}
