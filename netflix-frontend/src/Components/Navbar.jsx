@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { signOut } from "firebase/auth";
 import { firebaseAuth } from "../Utils/firebase-config";
 import {onAuthStateChanged } from 'firebase/auth';
+import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 
 export default function Navbar(){
     const links = [
@@ -39,17 +40,18 @@ export default function Navbar(){
                 </div>
             </div>
             <div className="flex items-center justify-between">
-                <div>
+                <div className="bg-gray-700 pr-2 rounded-md">
                     <input
                         type="text"
                         placeholder="Search"
-                        className="mr-2 px-4 py-2 bg-gray-700 text-white placeholder-white opacity-70 focus:outline-none rounded-md"
+                        className="px-4 py-2 bg-gray-700 text-white placeholder-white opacity-70 focus:outline-none rounded-md"
                     />
+                    <SearchOutlinedIcon/>
                 </div>
                 <div>
                     <button
                         onClick={() => signOut(firebaseAuth)}
-                        className="text-white font-semibold bg-red-600 py-2 px-4 rounded-md hover:bg-red-700 transition duration-300"
+                        className="ml-2 text-white font-semibold bg-red-600 py-2 px-4 rounded-md hover:bg-red-700 transition duration-300"
                     >
                         Sign out
                     </button>
