@@ -77,14 +77,14 @@ export const sitcoms = [
         name: "The Big Bang Theory",
         description: "A woman who moves into an apartment across the hall from two brilliant but socially awkward physicists shows them how little they know about life outside of the laboratory.",
         genres: ["Comedy", "Romance"],
-        image: ""
+        image: "src/assets/sitcoms/big-bang.jpeg"
     },
     {
         id: 112,
         name: "Brooklyn Nine-Nine",
         description: "Jake Peralta, an immature but talented NYPD detective in Brooklyn's 99th Precinct, comes into immediate conflict with his new commanding officer, the serious and stern Captain Ray Holt.",
         genres: ["Comedy", "Crime"],
-        image: ""
+        image: "src/assets/sitcoms/b99.jpeg"
     },
     {
         id: 113,
@@ -98,7 +98,7 @@ export const sitcoms = [
         name: "Parks and Recreation",
         description: "The absurd antics of an Indiana town's public officials as they pursue sundry projects to make their city a better place.",
         genres: ["Comedy"],
-        image: ""
+        image: "src/assets/sitcoms/parks.jpeg"
     },
     {
         id: 115,
@@ -112,35 +112,35 @@ export const sitcoms = [
         name: "How I Met Your Mother",
         description: "A father recounts to his children - through a series of flashbacks - the journey he and his four best friends took leading up to him meeting their mother.",
         genres: ["Comedy", "Romance"],
-        image: ""
+        image: "src/assets/sitcoms/how-i-met.jpeg"
     },
     {
         id: 117,
         name: "Modern Family",
         description: "Three different but related families face trials and tribulations in their own uniquely comedic ways.",
         genres: ["Comedy", "Romance"],
-        image: ""
+        image: "src/assets/sitcoms/Modern_Family_season_11_poster.jpg"
     },
     {
         id: 118,
         name: "Arrested Development",
         description: "Level-headed son Michael Bluth takes over family affairs after his father is imprisoned. But the rest of his spoiled, dysfunctional family are making his job unbearable.",
         genres: ["Comedy"],
-        image: ""
+        image: "src/assets/sitcoms/arrested.jpeg"
     },
     {
         id: 119,
         name: "The IT Crowd",
         description: "The comedic misadventures of Roy, Moss, and their grifting supervisor Jen, a rag-tag team of IT support workers at a large corporation headed by a hotheaded yuppie.",
         genres: ["Comedy"],
-        image: ""
+        image: "src/assets/sitcoms/it-crows.jpeg"
     },
     {
         id: 120,
         name: "Community",
         description: "A suspended lawyer is forced to enroll in a community college with an eclectic staff and student body.",
         genres: ["Comedy"],
-        image: ""
+        image: "src/assets/sitcoms/community.jpeg"
     }
 ];
 
@@ -157,63 +157,63 @@ export const thrillerShows = [
         name: "Mindhunter",
         description: "Set in the late 1970s, two FBI agents expand criminal science by delving into the psychology of murder and getting uneasily close to all-too-real monsters.",
         genres: ["Crime", "Drama", "Thriller"],
-        image: ""
+        image: "src/assets/thriller-shows/mindhunter.jpeg"
     },
     {
         id: 123,
         name: "Ozark",
         description: "A financial planner relocates his family to the Ozarks after a money laundering scheme goes wrong, and he must pay off a debt to a Mexican drug lord.",
         genres: ["Crime", "Drama", "Thriller"],
-        image: ""
+        image: "src/assets/thriller-shows/ozark.jpeg"
     },
     {
         id: 124,
         name: "Sherlock",
         description: "A modern update finds the famous sleuth and his doctor partner solving crime in 21st century London.",
         genres: ["Crime", "Drama", "Mystery"],
-        image: ""
+        image: "src/assets/thriller-shows/sherlock.jpeg"
     },
     {
         id: 125,
         name: "The Sinner",
         description: "Anthology series that examines how and why ordinary people commit brutal crimes.",
         genres: ["Crime", "Drama", "Mystery"],
-        image: ""
+        image: "src/assets/thriller-shows/sinner.jpeg"
     },
     {
         id: 126,
         name: "Dark",
         description: "A family saga with a supernatural twist, set in a German town, where the disappearance of two young children exposes the relationships among four families.",
         genres: ["Crime", "Drama", "Mystery"],
-        image: ""
+        image: "src/assets/thriller-shows/DarkNetflixPosterEnglish.jpg"
     },
     {
         id: 127,
         name: "The Blacklist",
         description: "A new FBI profiler, Elizabeth Keen, has her entire life uprooted when a mysterious criminal, Raymond Reddington, who has eluded capture for decades, turns himself in and insists on speaking only to her.",
         genres: ["Crime", "Drama", "Mystery"],
-        image: ""
+        image: "src/assets/thriller-shows/blacklist.jpeg"
     },
     {
         id: 128,
         name: "True Detective",
         description: "Seasonal anthology series in which police investigations unearth the personal and professional secrets of those involved, both within and outside the law.",
         genres: ["Crime", "Drama", "Mystery"],
-        image: ""
+        image: "src/assets/thriller-shows/detectives.jpeg"
     },
     {
         id: 129,
         name: "Homeland",
         description: "A bipolar CIA operative becomes convinced a prisoner of war has been turned by al-Qaeda and is planning to carry out a terrorist attack on American soil.",
         genres: ["Crime", "Drama", "Mystery"],
-        image: ""
+        image: "src/assets/thriller-shows/homeland.jpeg"
     },
     {
         id: 130,
         name: "Fargo",
         description: "Various chronicles of deception, intrigue, and murder in and around frozen Minnesota.",
         genres: ["Crime", "Drama", "Thriller"],
-        image: ""
+        image: "src/assets/thriller-shows/Fargoseason1promo.jpg"
     }
 ];
 

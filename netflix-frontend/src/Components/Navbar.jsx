@@ -29,7 +29,7 @@ export default function Navbar(){
         <div className="bg-black text-gray-100 flex items-center justify-between px-6 py-4">
             <div className="flex items-center justify-between">
                 <div>
-                    <img className="h-12" src="/src/assets/logo.png" alt="Logo"/>
+                    <img className="h-12" src="/src/assets/logo.png" alt="Logo" onClick={()=>navigate("/")}/>
                 </div>
                 <div>
                     <ul className="flex space-x-4 ml-4">
@@ -46,7 +46,7 @@ export default function Navbar(){
                         placeholder="Search"
                         className="px-4 py-2 bg-gray-700 text-white placeholder-white opacity-70 focus:outline-none rounded-md"
                     />
-                    <SearchOutlinedIcon className="cursor-pointer"/>
+                    <SearchOutlinedIcon className="cursor-pointer hover:text-gray-400 "/>
                 </div>
                 <div>
                     <button
