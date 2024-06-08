@@ -46,7 +46,7 @@ export default function Navbar(){
                         placeholder="Search"
                         className="px-4 py-2 bg-gray-700 text-white placeholder-white opacity-70 focus:outline-none rounded-md"
                     />
-                    <SearchOutlinedIcon/>
+                    <SearchOutlinedIcon className="cursor-pointer"/>
                 </div>
                 <div>
                     <button

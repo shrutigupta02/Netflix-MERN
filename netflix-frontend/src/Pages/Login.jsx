@@ -5,6 +5,7 @@ import { useState } from 'react';
 import {firebaseAuth} from '../Utils/firebase-config';
 import { signInWithEmailAndPassword, onAuthStateChanged } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
+import { Email } from '@mui/icons-material';
 
 export default function Login(){
     let [email, setEmail] = useState("");
@@ -31,6 +32,8 @@ export default function Login(){
         }catch(err){
             console.log(err.code);
             setWrongPass(true);
+            setEmail("");
+            setPassword("");
         }
 
         onAuthStateChanged(firebaseAuth, (currentUser)=>{
@@ -55,12 +58,14 @@ export default function Login(){
                             type="text"
                             placeholder="Email or mobile number"
                             onChange={updateEmail}
+                            value={email}
                             className="px-4 py-2 bg-gray-700 text-white opacity-70 focus:outline-none border border-gray-100 rounded-sm mb-4"
                         />
                         <input
                             type="password"
                             placeholder="Password"
                             onChange={updatePassword}
+                            value={password}
                             className="px-4 py-2 bg-gray-700 text-white opacity-70 focus:outline-none border border-gray-100 rounded-sm mb-4"
                         />
                         <button onClick={handleLogin}
@@ -68,10 +73,11 @@ export default function Login(){
                             Log In
                         </button>
                     </form>
+                    {wrongPass && <p className=' font-bold bg-amber-300 p-2 rounded-sm'>Invalid login details!</p>}
                     <p className="text-gray-400 mt-4">
                         New to Netflix? <a href="/signup" className="text-white font-medium hover:underline">Sign up now.</a>
                     </p>
-                    {wrongPass && <p className='mt-4 text-white font-bold'>Invalid login details!</p>}
+                    
                 </div>
             </div>
         </div>

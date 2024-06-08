@@ -12,6 +12,7 @@ export default function Signup(){
         password: "",
       });
     let [showPassword, setShowPassword] = useState(false);
+    let [vallidDetails, setValidDetails] = useState(true);
     let navigate = useNavigate();
 
     let handleFormChange = (event)=>{
@@ -30,6 +31,11 @@ export default function Signup(){
             console.log("added");
         }catch(err){
             console.log(err);
+            setValidDetails(false);
+            setFormValues({
+                email: "",
+                password: "",
+              });
         }
 
         onAuthStateChanged(firebaseAuth, (currentUser)=>{
@@ -57,6 +63,7 @@ export default function Signup(){
                     </h6>
                 </div>
                 <div className="showPassword ? 'grid grid-cols-2' : 'grid grid-cols-[2fr_1fr] w-3/5'">
+                {!vallidDetails && <p className='my-2 text-black font-bold bg-amber-400 p-2 rounded-md'>Invalid login details!</p>}
                     <input
                         type="email"
                         placeholder="Email address"
@@ -84,7 +91,9 @@ export default function Signup(){
                 {showPassword && <button onClick={handleSignIn}
                 className='h-min  mt-2 px-6 py-2 bg-red-600 text-white font-bold rounded-md hover:bg-red-700 focus:outline-none'
                 >Sign Up</button>}
+                
             </div>
+            
       </div>
     </div>
   );
