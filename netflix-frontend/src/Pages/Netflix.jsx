@@ -6,7 +6,9 @@ import { trendingMovies, comedyMovies } from "../Utils/movieDetails";
 import { trendingShows } from "../Utils/showDetails";
 import PageBackdrop from "../Components/PageBackdrop";
 import Footer from "../Components/Footer";
-import img from "../assets/home.jpeg"
+import img from "../assets/home.jpeg";
+import logoImage from "../assets/home-logo.png"
+import infoImage from "../assets/trending-shows/stranger.jpeg.webp"
 
 export default function Netflix(){   
     const item = {
@@ -14,13 +16,13 @@ export default function Netflix(){
         name: "Stranger Things",
         description: "A group of kids in the 1980s encounter strange happenings in their small town.",
         genres: ["Drama", "Fantasy", "Horror"],
-        image: "src/assets/trending-shows/stranger.jpeg.webp"
+        image: infoImage
     };
     
     return(
         <div className="bg-black h-screen w-screen">
             <Navbar />
-            <PageBackdrop image={img} logo="src/assets/home-logo.png" item={item}/>
+            <PageBackdrop image={img} logo={logoImage} item={item}/>
             <Slider trendingMovies={trendingMovies} trendingShows={trendingShows}/>
             <Footer/>
         </div>
