@@ -12,13 +12,13 @@ export default function TVShows(){
         name: "F.R.I.E.N.D.S",
         description: "Follows the personal and professional lives of six twenty to thirty-something-year-old friends living in Manhattan.",
         genres: ["Comedy", "Romance"],
-        image: "src/assets/trending-shows/friends.webp"
+        image: "../assets/trending-shows/friends.webp"
     };
 
     return(
         <div className="bg-black text-white">
             <Navbar/>
-            <PageBackdrop image={img} logo="src/assets/tv-logo.png" item={item}/>
+            <PageBackdrop image={img} logo="../assets/tv-logo.png" item={item}/>
             <Slider trendingShows={trendingShows}/>
             <div>
                 <CardSlider title="Dive in: Sitcoms" arr={sitcoms}/>
