@@ -6,6 +6,7 @@ import { trendingMovies, comedyMovies } from "../Utils/movieDetails";
 import { trendingShows } from "../Utils/showDetails";
 import PageBackdrop from "../Components/PageBackdrop";
 import Footer from "../Components/Footer";
+import img from "../assets/home.jpeg"
 
 export default function Netflix(){   
     const item = {
@@ -19,7 +20,7 @@ export default function Netflix(){
     return(
         <div className="bg-black h-screen w-screen">
             <Navbar />
-            <PageBackdrop image="src/assets/home.jpeg" logo="src/assets/home-logo.png" item={item}/>
+            <PageBackdrop image={img} logo="src/assets/home-logo.png" item={item}/>
             <Slider trendingMovies={trendingMovies} trendingShows={trendingShows}/>
             <Footer/>
         </div>

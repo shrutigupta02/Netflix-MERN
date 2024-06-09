@@ -4,6 +4,7 @@ import PageBackdrop from "../Components/PageBackdrop";
 import Slider from "../Components/Slider";
 import { trendingShows, sitcoms, thrillerShows } from "../Utils/showDetails";
 import Footer from "../Components/Footer";
+import img from "../assets/tv-poster.webp"
 
 export default function TVShows(){
     const item = {
@@ -17,7 +18,7 @@ export default function TVShows(){
     return(
         <div className="bg-black text-white">
             <Navbar/>
-            <PageBackdrop image="src/assets/tv-poster.webp" logo="src/assets/tv-logo.png" item={item}/>
+            <PageBackdrop image={img} logo="src/assets/tv-logo.png" item={item}/>
             <Slider trendingShows={trendingShows}/>
             <div>
                 <CardSlider title="Dive in: Sitcoms" arr={sitcoms}/>

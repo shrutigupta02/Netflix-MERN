@@ -3,6 +3,7 @@ import Navbar from "../Components/Navbar";
 import PageBackdrop from "../Components/PageBackdrop";
 import Slider from "../Components/Slider";
 import Footer from "../Components/Footer";
+import img from "../assets/movies-poster.webp"
 import { comedyMovies, educationMovies, romComMovies, trendingMovies } from "../Utils/movieDetails";
 
 export default function Movies(){
@@ -13,11 +14,11 @@ export default function Movies(){
         genres: ["Action", "Adventure", "Fantasy"],
         image: "src/assets/trending-movies/spiderman.jpg"
     };
-
+ 
     return(
         <div className="bg-black text-slate-100">
             <Navbar/>
-            <PageBackdrop image="src/assets/movies-poster.webp" logo="src/assets/movies-logo.png" item={item}/>
+            <PageBackdrop image={img} logo="src/assets/movies-logo.png" item={item}/>
             <Slider trendingMovies={trendingMovies}/>
             <div>
                 <CardSlider title="Get some laughs with our beloved comedies" arr={comedyMovies}/>
