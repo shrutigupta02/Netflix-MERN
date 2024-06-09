@@ -4,7 +4,7 @@ export const trendingMovies = [
         name: "Spider-Man: No Way Home",
         description: "Peter Parker navigates his way through his latest adventures as Spider-Man.",
         genres: ["Action", "Adventure", "Fantasy"],
-        image: "netflix-frontend/public/assets/trending-movies/spiderman.jpg"
+        image: "src/assets/trending-movies/spiderman.jpg"
     },
     {
         id: 2,
