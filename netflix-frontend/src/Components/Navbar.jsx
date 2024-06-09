@@ -8,8 +8,9 @@ import { allData } from "../Utils/allData";
 export default function Navbar(){
     const links = [
         { name: "Home", link: "/" },
-        { name: "TV Shows", link: "/tv" },
         { name: "Movies", link: "/movies" },
+        { name: "TV Shows", link: "/tv" },
+        
       ];
     const navigate = useNavigate();
     let [search, setSearch] = useState("");

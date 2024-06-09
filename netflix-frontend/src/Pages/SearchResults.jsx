@@ -1,6 +1,7 @@
 import { useLocation } from "react-router-dom";
 import Card from "../Components/Card";
 import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
 
 export default function SearchResults() {
     const location = useLocation();
@@ -22,6 +23,7 @@ export default function SearchResults() {
                     ))}
                 </div>
             )}
+            <Footer/>
         </div>
     );
 }

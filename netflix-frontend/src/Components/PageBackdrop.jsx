@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 
-export default function PageBackdrop({image, logo}){
+export default function PageBackdrop({image, logo, item}){
     const navigate = useNavigate();
 
     return(
@@ -18,7 +18,9 @@ export default function PageBackdrop({image, logo}){
                 className="flex items-center ml-4 bg-white text-black px-8 py-2 rounded-md hover:bg-gray-300 transition duration-300">
                     <PlayArrowIcon className="mr-2"/> <span>Play</span>
                 </button>
-                <button className="flex items-center ml-4 bg-gray-700 text-white px-8 py-2 rounded-md hover:bg-gray-600 transition duration-300">
+                <button 
+                onClick={() => navigate("/details", { state: { item } })}
+                className="flex items-center ml-4 bg-gray-700 text-white px-8 py-2 rounded-md hover:bg-gray-600 transition duration-300">
                     <InfoOutlinedIcon className="mr-2" /> <span>More info</span>
                 </button>
             </div>

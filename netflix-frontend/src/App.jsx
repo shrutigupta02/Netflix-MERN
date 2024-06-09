@@ -7,6 +7,7 @@ import Player from './Components/Player';
 import Movies from './Pages/Movies';
 import TVShows from './Pages/TVShows';
 import SearchResults from './Pages/SearchResults';
+import Info from './Pages/Info';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
           <Route exact path = "/movies" element={<Movies/>}/>
           <Route exact path = "/tv" element={<TVShows/>}/>
           <Route exact path = "/search" element={<SearchResults/>}/>
+          <Route exact path = "/details" element={<Info/>}/>
         </Routes>
       </BrowserRouter>
     </>

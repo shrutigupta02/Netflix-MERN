@@ -63,7 +63,7 @@ export default function Signup(){
                     </h6>
                 </div>
                 <div className="showPassword ? 'grid grid-cols-2' : 'grid grid-cols-[2fr_1fr] w-3/5'">
-                {!vallidDetails && <p className='my-2 text-black font-bold bg-amber-400 p-2 rounded-md'>Invalid login details!</p>}
+                {!vallidDetails && <p className='my-2 text-black font-bold bg-amber-400 p-2 rounded-md'>Invalid login details or user already exists!</p>}
                     <input
                         type="email"
                         placeholder="Email address"
