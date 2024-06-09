@@ -5,6 +5,8 @@ import {onAuthStateChanged } from 'firebase/auth';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import { useState, useEffect } from "react";
 import { allData } from "../Utils/allData";
+import logo from "/src/assets/logo.png";
+
 export default function Navbar(){
     const links = [
         { name: "Home", link: "/" },
@@ -51,7 +53,7 @@ export default function Navbar(){
         <div className="bg-black text-gray-100 flex items-center justify-between px-6 py-4">
             <div className="flex items-center justify-between">
                 <div>
-                    <img className="h-12" src="/src/assets/logo.png" alt="Logo" onClick={()=>navigate("/")}/>
+                    <img className="h-12" src={logo} alt="Logo" onClick={()=>navigate("/")}/>
                 </div>
                 <div>
                     <ul className="flex space-x-4 ml-4">
