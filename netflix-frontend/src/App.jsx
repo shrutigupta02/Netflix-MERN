@@ -6,6 +6,7 @@ import Signup from './Pages/Signup';
 import Player from './Components/Player';
 import Movies from './Pages/Movies';
 import TVShows from './Pages/TVShows';
+import SearchResults from './Pages/SearchResults';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
           <Route exact path = "/player" element={<Player/>}/>
           <Route exact path = "/movies" element={<Movies/>}/>
           <Route exact path = "/tv" element={<TVShows/>}/>
+          <Route exact path = "/search" element={<SearchResults/>}/>
         </Routes>
       </BrowserRouter>
     </>
