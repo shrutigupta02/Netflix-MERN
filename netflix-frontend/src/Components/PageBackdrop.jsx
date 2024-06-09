@@ -16,10 +16,10 @@ export default function PageBackdrop({image, logo}){
             <div className="flex p-2">
                 <button onClick={() => navigate("/player")} 
                 className="flex items-center ml-4 bg-white text-black px-8 py-2 rounded-md hover:bg-gray-300 transition duration-300">
-                    <PlayArrowIcon /> <span>Play</span>
+                    <PlayArrowIcon className="mr-2"/> <span>Play</span>
                 </button>
                 <button className="flex items-center ml-4 bg-gray-700 text-white px-8 py-2 rounded-md hover:bg-gray-600 transition duration-300">
-                    <InfoOutlinedIcon /> <span>More info</span>
+                    <InfoOutlinedIcon className="mr-2" /> <span>More info</span>
                 </button>
             </div>
         </div>

@@ -9,13 +9,19 @@ export default function SearchResults() {
 
     return(
         <div className="bg-black text-slate-100">
-            <Navbar/>
-            <h3 className="m-4 text-white font-semibold text-xl">Search Results:</h3>
-            <div className=" flex space-x-4 p-4" onClick={()=> console.log(results[0])}>
-                {results.map((item)=>(
-                <Card key={item.id} item={item}/>
-                ))}
-            </div>
+            <Navbar />
+            <h3 className="m-4 font-semibold text-xl">Search Results:</h3>
+            {results.length === 0 ? (
+                <div className="bg-black h-screen w-screen p-4 text-center">
+                    <h3 className="m-4 font-semibold text-lg">No results found</h3>
+                </div>
+            ) : (
+                <div className="flex space-x-4 p-4 h-screen w-screen">
+                    {results.map((item) => (
+                        <Card key={item.id} item={item} />
+                    ))}
+                </div>
+            )}
         </div>
     );
 }

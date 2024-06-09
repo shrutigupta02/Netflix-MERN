@@ -24,8 +24,10 @@ export default function Navbar(){
             data.name.toLowerCase().includes(search.toLowerCase())
         );
         setSearchResults(results);
+        setSearch("");
         if(searchResults!=[])
         navigate("/search", { state: { results } });
+        
     };
 
     useEffect(() => {
