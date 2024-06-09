@@ -5,7 +5,7 @@ import Slider from "../Components/Slider";
 import Footer from "../Components/Footer";
 import img from "../assets/movies-poster.webp";
 import logoImage from "../assets/movies-logo.png";
-import infoImage from "src/assets/trending-movies/spiderman.jpg";
+import infoImage from "../assets/trending-movies/spiderman.jpg";
 import { comedyMovies, educationMovies, romComMovies, trendingMovies } from "../Utils/movieDetails";
 
 export default function Movies(){
