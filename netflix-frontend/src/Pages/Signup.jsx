@@ -56,10 +56,10 @@ export default function Signup(){
         <Header login />
             <div className='absolute flex flex-col justify-center items-center  right-0 left-0'>
                 <div className="text-center text-xl">
-                    <h1 className='font-extrabold text-6xl mb-5'>Unlimited movies, TV shows and more.</h1>
-                    <h4 className='font-semibold mb-3 text-2xl'>Watch anywhere. Cancel anytime.</h4>
+                    <h1 className='font-extrabold text-6xl mb-5'>Infinite movies, TV shows, and more.</h1>
+                    <h4 className='font-semibold mb-3 text-2xl'>Anytime. Anywhere.</h4>
                     <h6 className='text-md mb-2'>
-                    Ready to watch? Enter your email to create or restart membership.
+                    Ready to start watching? Enter your email to create or renew your subscription.
                     </h6>
                 </div>
                 <div className="showPassword ? 'grid grid-cols-2' : 'grid grid-cols-[2fr_1fr] w-3/5'">
